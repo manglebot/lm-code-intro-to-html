@@ -1,2 +1,123 @@
 /* Your CSS styles here! */
 
+/* Reset some default browser styles */
+html, body, h1, h2, h3, p, ul, li, a, input, button, label, fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+/* background and text color for the entire document */
+body {
+    background: linear-gradient(to bottom,  #78AFE4 0%,#CFE4F6 100%); 
+    color: #333;
+    font-family:"Avenir Light", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* #2886D5
+#78AFE4 */
+
+/* header section */
+header {
+    background-color: #2886d5;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* navigation menu */
+nav {
+    background-color: #1D639D; 
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #3F94DB;
+    transition: background-color 1s;
+}
+
+/* main content */
+main {
+    padding: 20px;
+    text-align:center;
+}
+
+main h2 {
+    color: #1D639D;
+    font-family:"Avenir Heavy", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+/* image */
+main img {
+    width: 100%;
+    max-width: 600px;;
+    height: auto;
+    border: solid1px black;
+    border-radius: 0 25px 25px 25px;
+    box-shadow: 10px 10px 10px #2886D5;
+}
+
+/* sidebars */
+aside {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 10%;
+    border: solid #000;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+aside p {
+    text-align: left;
+    padding: 5px 0;
+}
+
+/* aside:nth-child(2) {
+    text-align: center;
+} */
+
+/* form */
+footer form {
+    text-align: left;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* text - needed as Avenir light has no bold */
+strong {
+    font-family:"Avenir Heavy", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Make responsive */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
