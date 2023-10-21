@@ -25,6 +25,14 @@ header {
     border-radius: 5px;
 }
 
+/* Center-align the first instance of <label> and <input> */
+body label:first-child, body input:first-child {
+    display: inline-block;
+    margin: 0 10px; /* Adjust the margin as needed for spacing */
+    outline:solid pink;
+  }
+  
+
 /* navigation menu */
 nav {
     background-color: #1D639D; 
@@ -99,12 +107,54 @@ aside p {
 /* form */
 footer form {
     text-align: left;
-    max-width: 300px; /* Adjust the maximum width as needed */
+    max-width: 22rem; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the form horizontally */
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: solid #FFF;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
+
+/* separate text from text above so it goes with the tickboxes below */
+footer form fieldset p{
+    margin: 0.5rem auto 0;
+}
+
+footer form fieldset > label {
+    width: 34%;
+    margin-bottom: 1em;
+}
+
+footer form fieldset > input[type="checkbox"] {
+    width: 12%;
+}
+
+footer form div {
+    display: flex;
+    justify-content:space-between;
+}
+
+/* remove stray border */
+form > fieldset {
+    border: none;
+}
+
+footer form label {
+    display: inline-flex;
+    width: 10rem;
+    /* border: solid red; */
+}
+
+footer form input {
+    width: 10rem;
+    /* border: solid green; */
+}
+
+footer form input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+}
+
 
 /* text - needed as Avenir light has no bold */
 strong {
