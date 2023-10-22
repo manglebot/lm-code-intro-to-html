@@ -174,6 +174,19 @@ body > aside:nth-last-of-type(1) {
     text-align: center;
 } */
 
+footer {
+    /* background-color: #A1C7EC; */
+    background: linear-gradient(to top,  #78AFE4 0%,#CFE4F6 100%);
+    padding: 100px auto;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+footer h2 {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
 /* form */
 footer form {
     text-align: left;
@@ -182,7 +195,13 @@ footer form {
     padding: 10px;
     border: solid #FFF;
     border-radius: 15px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    background-color: #A1C7EC;
+
+}
+
+footer form::after {
+    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 /* separate text from text above so it goes with the tickboxes below */
