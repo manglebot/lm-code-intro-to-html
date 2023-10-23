@@ -38,7 +38,6 @@ header {
     color: #fff;
     text-align: center;
     padding: 10px;
-    border-radius: 5px;
 }
 
 /* navigation menu */
@@ -165,6 +164,7 @@ aside p {
     padding: 5px 0;
 }
 
+/* covid warning anim */
 body > aside:first-of-type {
     border-color: red;
     border-width: 3px;
