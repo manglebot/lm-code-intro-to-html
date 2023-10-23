@@ -165,6 +165,18 @@ aside p {
     padding: 5px 0;
 }
 
+body > aside:first-of-type {
+    border-color: red;
+    border-width: 3px;
+    animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+    0% { border-color: red; }
+    50% { border-color: black; }
+    100% { border-color: red; }
+  }
+
 body > aside:nth-last-of-type(1) {
     display: inline-block;
     justify-content: center;
@@ -190,8 +202,8 @@ footer h2 {
 /* form */
 footer form {
     text-align: left;
-    max-width: 22rem; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the form horizontally */
+    max-width: 22rem;
+    margin: 0 auto;
     padding: 10px;
     border: solid #FFF;
     border-radius: 15px;
